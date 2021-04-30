@@ -15,6 +15,11 @@ body, html {
 .row-bottom-padded-sm {
   padding-bottom: 1em; }
 
+.container {
+  width: 100%;
+  margin: auto auto;
+}
+
 /*for mobile phones */
 @media only screen and (max-width: 600px) {
   .narrow-content {
@@ -539,7 +544,7 @@ body, html {
   background-color: whitesmoke;
   margin: auto;
   overflow: hidden;
-  height: 900px;
+  height: auto;
 }
 
 .heading-meta {
@@ -727,6 +732,14 @@ p.about-paragraph {
 }
 
 
+@media only screen and (max-width: 1367px) and (min-width: 1025px) {
+  .about-second {
+    height: 1000px !important;
+  }
+
+
+}
+
 
 
 .about-second {
@@ -787,7 +800,6 @@ h2.heading {
   text-align: center;
   background-color: #f1f1f1;
   overflow: hidden;
-  display: inline-block !important;
   padding-bottom: 30px;
 }
 

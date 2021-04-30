@@ -58,7 +58,7 @@ export default class Contact extends Component {
     render() {
         const {name, email, subject, message, sentMessage } = this.state;
         return (
-            <div>
+            <div className={"container"}>
                 <section id="Contact" className={"contact"} data-section={"contact"}>
                     <div className={"narrow-content"}>
                         <h1>Contact Me</h1>

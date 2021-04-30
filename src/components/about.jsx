@@ -59,7 +59,7 @@ const secondSection = (
 export default class About extends Component {
     render() {
         return (
-            <div>
+            <div className={"container"}>
                 <section id={"about"} className="about" data-section="about">
                     <div className={"narrow-content"}>
                         <div className="row">
@@ -109,7 +109,6 @@ export default class About extends Component {
                 </section>
                 {secondSection}
             </div>
-
         )
     }
 }

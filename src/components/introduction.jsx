@@ -20,7 +20,7 @@ const heroBlock = (
                         </div>
                     </div>
 
-                    <a id="download-button" href="images" download="Jay Anderson Resume.pdf">Download CV</a>
+                    <a id="download-button" href="images/Jay%20Anderson%20Resume.pdf" download>Download CV</a>
                     <a id="contact-button" href={"#Contact"}>Contact me</a>
 
 
@@ -34,8 +34,10 @@ export default class Introduction extends Component {
     render() {
         return (
             <section id={"Introduction"} data-section={"Introduction"}>
-                <div className="hero-image" >
-                            {heroBlock}
+                <div className={"container"}>
+                    <div className="hero-image" >
+                                {heroBlock}
+                    </div>
                 </div>
             </section>
         )
