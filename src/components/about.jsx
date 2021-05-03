@@ -5,7 +5,6 @@ const secondSection = (
         <div className={"narrow-content"}>
             <div className="row">
                 <h1 className="heading-meta">What do I do?</h1>
-                <h1 className="heading-meta">What do I do?</h1>
                 <br/>
             </div>
         </div>
