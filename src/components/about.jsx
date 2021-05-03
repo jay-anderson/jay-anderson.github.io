@@ -4,8 +4,8 @@ const secondSection = (
    <section className={"about-second"}>
         <div className={"narrow-content"}>
             <div className="row">
-                <h1 className="heading-meta">What I do?</h1>
-                <h2 className="heading">Here are some of my expertise</h2>
+                <h1 className="heading-meta">What do I do?</h1>
+                <h1 className="heading-meta">What do I do?</h1>
                 <br/>
             </div>
         </div>
@@ -13,9 +13,10 @@ const secondSection = (
                 <div className="column">
                     <div className="card">
                         <h3>Web & Front End Development</h3>
-                        <p>I love building websites. I'm a front-end leaning programmer, but I do have backend experience. As of now, I'm specializing in building custom personal webpages for small organizations and young professionals. I enjoy creating simple, easy-to-understand sites with an emphasis on smooth and simple communication.  </p>
-                        <p>Given that we do most of our searching from our smartphones, I aim to create each website with a mobile-first approach. This helps the site to load faster and smooths out the transition from mobile to desktop.</p>
-
+                        <div className={"p-container"}>
+                            <p>I love building websites. I'm a front-end leaning programmer, but I do have backend experience. As of now, I'm specializing in building custom personal webpages for small organizations and young professionals. I enjoy creating simple, easy-to-understand sites with an emphasis on smooth and simple communication.  </p>
+                            <p>Given that we do most of our searching from our smartphones, I aim to create each website with a mobile-first approach. This helps the site to load faster and smooths out the transition from mobile to desktop.</p>
+                        </div>
                         <h4 id={"h4-card-one-language"}>Languages:</h4>
                         <p>JavaScript, HTML, CSS, Node.js, React</p>
                         <br/>
@@ -26,8 +27,11 @@ const secondSection = (
                 <div className="column">
                         <div className="card" id={"card-two"}>
                             <h3>Software Development</h3> {/*what about something business related instead?*/}
-                            <p>I've taken coursework in a multitude of Computer Science subjects, including Data Structures, Algorithms, Operating Systems, and Computer Hardware. During these courses, I contributed to designing and developing software programs to meet a variety of needs on both solo projects and in teams.</p>
-                            <p>Outside of academics, I've worked in two information technology roles. I worked as an Information Technology Intern for two years at NYU Gallatin and I worked as a Helpdesk Assistant for a little under a year at the NYU School of Law.</p>
+                            <div className={"p-container"}>
+
+                                <p>I've taken coursework in a multitude of Computer Science subjects, including Data Structures, Algorithms, Operating Systems, and Computer Hardware. During these courses, I contributed to designing and developing software programs to meet a variety of needs on both solo projects and in teams.</p>
+                                <p>Outside of academics, I've worked in two information technology roles. I worked as an Information Technology Intern for two years at NYU Gallatin and I worked as a Helpdesk Assistant for a little under a year at the NYU School of Law.</p>
+                            </div>
                             <h4 id={"h4-card-two-language"}>Languages:</h4>
                             <p>Java, C, MIPS/Assembly, Python</p>
                             <br/>
@@ -38,8 +42,11 @@ const secondSection = (
                 <div className="column">
                         <div className="card" id={"card-three"}>
                             <h3>Data Science & Analytics</h3>
-                            <p>I've completed numerous courses in data analytics at both NYU and the National University of Singapore. My primary tool for data analytics is Python. I have experience with a variety of machine learning techniques. I'm familiar with the following methods of supervised learning: regression, decision tree, random forest, KNN, and logistic regression. I also have experience with K-Means clustering.</p>
-                            <p>I have experience with other methods of data analytics such as using Tableau's platform. I have some familiarity with querying SQL databases. </p>
+                            <div className={"p-container"}>
+
+                                <p>I've completed numerous courses in data analytics at both NYU and the National University of Singapore. My primary tool for data analytics is Python. I have experience with a variety of machine learning techniques. I'm familiar with the following methods of supervised learning: regression, decision tree, random forest, KNN, and logistic regression. I also have experience with K-Means clustering.</p>
+                                <p>I have experience with other methods of data analytics such as using Tableau's platform. I have some familiarity with querying SQL databases. </p>
+                            </div>
                             <h4 id={"h4-card-three-language"}>Languages:</h4>
                             <p>Python, SQL</p>
                             <br/>
@@ -67,9 +74,10 @@ export default class About extends Component {
                                 <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                                     <div className="col-md-12">
                                         <div className="about-desc">
-                                            <h1 className="heading-meta">About Me</h1>
                                             <img src={"images/authorImage.jpg"} className="author-image" alt={"Author"} height={"327px"} width={"326px"}/>
-                                            <h2 className="author-name">I'm Jay Anderson.</h2>
+                                            <h1 className="heading-meta">Here's a little more about Me</h1>
+
+                                            {/*<h2 className="author-name">I'm Jay Anderson.</h2>*/}
 
 
                                             <p className={"about-paragraph"}>

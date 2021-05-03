@@ -570,7 +570,7 @@ body, html {
   margin-right: auto;
   position: relative;
   border: 2px solid #404040;
-
+  top: 60px;
 }
 
 h2.author-name{
@@ -623,6 +623,8 @@ p.about-paragraph {
   text-align: center;
 }
 
+
+
 /*for vertical phones*/
 @media only screen and (max-width: 600px) {
   .col-row {
@@ -646,6 +648,8 @@ p.about-paragraph {
     padding-bottom: 45px !important;
   }
 }
+
+
 
 /*for tablets*/
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
@@ -716,6 +720,7 @@ p.about-paragraph {
 
   h4#h4-card-two-language {
     padding-top: 30px;
+    padding-top: 30px;
   }
   h4#h4-card-one-language {
     padding-top: 20px;
@@ -737,6 +742,27 @@ p.about-paragraph {
     height: 1000px !important;
   }
 
+
+
+}
+
+@media only screen and (min-width: 1367px) {
+
+
+
+  .p-container {
+    height: 45%;
+  }
+
+  .card {
+    height: 513px !important;
+  }
+
+
+
+  section.about-second {
+    height: 800px;
+  }
 
 }
 
