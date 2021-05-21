@@ -260,7 +260,7 @@ body, html {
 }
 
 /*for horizontal tablets*/
-@media only screen and (max-width: 1024px) and (min-width: 1020px) {
+@media only screen and (max-width: 1024px) and (min-width: 1021px) {
   .hero-image {
     max-height: 700px;
     background-size: 200% !important;
@@ -271,7 +271,8 @@ body, html {
 
   .hero-text {
     text-align: right; /*for now*/
-    position: absolute;
+    position: relative;
+    float: left;
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
@@ -320,7 +321,6 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: left;
-
 }
 
 .social-media-image {
@@ -624,58 +624,129 @@ p.about-paragraph {
 }
 
 
+/********************************************************/
+/*for the about second responsiveness*/
 
-/*for vertical phones*/
-@media only screen and (max-width: 600px) {
-  .col-row {
-    padding: 0 2em !important;
+
+
+
+@media only screen and (max-width: 349px) {
+
+
+  .column {
+    width: 100% !important;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
   }
 
-  .about-second {
-    height: auto !important;
-    padding-bottom: 45px !important;
+  .col-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section.about-second {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  div.col-row {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-/*for horizontal phones*/
-@media only screen and (max-width: 767px)  and (min-width: 600px) {
-  .col-row {
-    padding: 0 2em !important;
+@media only screen and (max-width: 549px) and (min-width: 350px){
+
+
+  .column {
+    width: 100% !important;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
   }
 
-  .about-second {
-    height: auto !important;
-    padding-bottom: 45px !important;
+  .col-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section.about-second {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  div.col-row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 759px) and (min-width: 550px){
+
+
+  .column {
+    width: 100% !important;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .col-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section.about-second {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  div.col-row {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1001px) and (min-width: 760px){
+
+  .column {
+    width: 100% !important;
+    float: left;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .col-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  section.about-second {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  div.col-row {
+    padding-left: 128px;
+    padding-right: 128px;
   }
 }
 
 
 
 /*for tablets*/
-@media only screen and (max-width: 1000px) and (min-width: 800px) {
-  .col-row {
-    padding: 0 2em !important;
-  }
-
-  .about-second {
-    padding-bottom: 45px !important;
-    height: auto !important;
-  }
-
-  div#card-two.card {
-    padding-bottom: 10px;
-  }
-
-  h4#h4-card-three {
-    padding-top: 18px;
-  }
-
-  div#card-three.card {
-    padding-bottom: 12px;
-  }
-}
-
-@media only screen and (max-width: 799px) and (min-width: 767px) {
+@media only screen and (max-width: 1011px) and (min-width: 1002px) {
   .col-row {
     padding: 0 2em !important;
   }
@@ -689,8 +760,6 @@ p.about-paragraph {
     padding-bottom: 30px;
   }
 
-
-
   h4#h4-card-three {
     padding-top: 18px;
   }
@@ -700,15 +769,18 @@ p.about-paragraph {
   }
 
   h4#h4-card-two-language {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
-  h4#h4-card-three-language {
-    padding-top: 10px;
+  h4#h4-card-two.card-tools {
+    padding-top: 20px;
   }
+
 
 }
-@media only screen and (max-width: 1024px) and (min-width: 1000px) {
+
+
+@media only screen and (max-width: 1025px) and (min-width: 1012px) {
   .col-row {
     padding: 0 2em !important;
   }
@@ -719,7 +791,6 @@ p.about-paragraph {
   }
 
   h4#h4-card-two-language {
-    padding-top: 30px;
     padding-top: 30px;
   }
   h4#h4-card-one-language {
@@ -734,36 +805,129 @@ p.about-paragraph {
     padding-bottom: 10px;
   }
 
+  h4#h4-card-three.card-tools {
+    padding-top: 15px;
+  }
+
+  h4#h4-card-two.card-tools {
+    padding-top: 15px;
+  }
+
+
 }
 
 
-@media only screen and (max-width: 1367px) and (min-width: 1025px) {
-  .about-second {
-    height: 1000px !important;
+
+
+@media only screen and (max-width: 1172px) and (min-width: 1026px) {
+  div.column {
+    width: 262px !important;
+  }
+
+
+  h4#h4-card-three.card-tools {
+    padding-top: 20px;
+  }
+
+  #card-three {
+    padding-bottom: 10px;
+  }
+
+  #card-two {
+    padding-bottom: 10px;
+  }
+
+  section.about-second {
+    height: 1000px;
+  }
+
+
   }
 
 
 
-}
 
-@media only screen and (min-width: 1367px) {
-
-
-
-  .p-container {
-    height: 45%;
+@media only screen and (max-width: 1249px) and (min-width: 1173px) {
+  .column {
+    width: 312px !important;
   }
 
-  .card {
-    height: 513px !important;
+  h4#h4-card-two.card-tools {
+    padding-top: 20px;
   }
 
+  h4#h4-card-three.card-tools {
+    padding-top: 20px;
+  }
+
+  #card-three {
+    padding-bottom: 12px;
+  }
 
 
   section.about-second {
-    height: 800px;
+    height: 1000px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1499px) and (min-width: 1250px) {
+  .column {
+    width: 331px !important;
   }
 
+  h4#h4-card-two-language {
+    padding-top: 50px;
+  }
+
+  #card-three {
+    padding-bottom: 12px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1629px) and (min-width: 1500px) {
+  .column {
+    width: 414px !important;
+  }
+
+  h4#h4-card-one-language {
+    padding-top: 20px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1668px) and (min-width: 1630px) {
+  h4#h4-card-two-language {
+    padding-top: 20px;
+  }
+  h4#h4-card-three-language {
+    padding-top: 20px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1705px) and (min-width: 1669px) {
+
+}
+
+
+/*for large monitors*/
+@media only screen and (max-width: 3000px) and (min-width: 1705px) {
+  /*make columns only take up a specified width to make this easier */
+  .column {
+    width: 473.65px !important;
+  }
+  .col-row {
+    margin: auto !important;
+  }
 }
 
 
@@ -792,33 +956,37 @@ h2.heading {
 }
 
 .column {
-    float: left;
-    width: 33.33%;
-    display: block;
-    font-size: 1em;
+  width: 33.33%;
+  font-size: 1em;
   font-family: 'Arvo', serif;
-    text-align: center;
-    position: relative;
-    padding: 0 5px;
-  }
+  text-align: center;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: table-cell;
+  vertical-align: top;
+}
 
 .column h3 {
-    font-weight: normal;
-    font-size: 1.5em;
+  font-weight: normal;
+  font-size: 1.5em;
+
 }
 
 .col-row {
   padding: 0 8em;
-  margin: 0 -5px;
+  margin: 0 auto;
+  display: table;
+
 }
 
 
-
+/*
 .col-row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*adds the card  */
@@ -826,18 +994,10 @@ h2.heading {
   text-align: center;
   background-color: #f1f1f1;
   overflow: hidden;
+  display: inline-block !important;
   padding-bottom: 30px;
 }
 
-
-
-@media screen and (max-width: 738px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 
 
 
@@ -867,9 +1027,6 @@ h2.heading {
 
   }
 
-  #Timeline .timeline {
-    height: 3900px !important;
-  }
 
   .heading-p-container {
     position: absolute;
@@ -910,54 +1067,6 @@ h2.heading {
 }
 
 
-/*for height*/
-/*the way I created the tinmeline uses some absolute elements which is
-intefering wth attempting to use height: auto.
-Will fix later with a more permenant fix
- */
-
-@media only screen and (min-width: 701px) and (max-width: 732px) {
-  section#Timeline .timeline {
-    height: 2250px !important;
-  }
-}
-
-@media only screen and (min-width: 669px) and (max-width: 700px) {
-  #Timeline .timeline {
-    height: 2350px !important;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 668px) {
-  section#Timeline .timeline {
-    height: 2400px !important;
-  }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 599px) {
-  #Timeline .timeline {
-    height: 3400px !important;
-  }
-}
-
-@media only screen and (min-width: 733px) and (max-width: 767px) {
-  #Timeline .timeline {
-    height: 2250px !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 900px) {
-  #Timeline .timeline {
-    height: 3800px !important;
-  }
-}
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
-  #Timeline .timeline {
-    height: 2700px !important;
-  }
-}
-/***********************************************************************************/
-
 .heading-p-container {
   width: 50%;
   text-align: right;
@@ -984,29 +1093,27 @@ Will fix later with a more permenant fix
   padding-right: 45px;
   padding-top: 0;
   margin-top: 6px;
-
 }
 
 
-.timeline-page {
+div.timeline-page{
   background-color: #bdb7ab;
   overflow: hidden;
+
 }
 
 #timeline {
   background-color: #bdb7ab;
 }
 
-#Timeline .timeline {
-  height: 2200px;
-}
 
 
-.timeline {
+
+div.timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-
+  overflow: hidden;
 
 }
 
@@ -1175,7 +1282,7 @@ Will fix later with a more permenant fix
   }
 }
 
-.contact {
+section#Contact.contact {
   background-color: #e6e6e6;
   overflow: hidden;
   border-radius: 5px;

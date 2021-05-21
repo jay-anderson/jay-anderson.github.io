@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 export default class Timeline extends Component {
     render() {
         return(
-            <div className={"container"}>
+            <div className={"container-timeline"}>
                 <div className={"timeline-page"} data-section={"Timeline"}>
                     <section id={"Timeline"} >
                         <div className="narrow-content">
@@ -89,16 +89,29 @@ export default class Timeline extends Component {
                                         <h3>Began Attending NYU Stern</h3>
                                         <p>August 2017 - Present</p>
                                         <p>I was accepted into the prestigious NYU Stern School of Business as an Early Decision 1 student. This institution currently has an acceptance
-                                        rate of 7.6%. The program seeks to offer a well-rounded education, featuring courses in liberal arts, business fundamentals, global business, and
-                                        social impact. During my four years, I explored courses in accounting, finance, and economics. I eventually settled on obtaining a dual-concentration
-                                        in Data Science and Management.</p>
+                                            rate of 7.6%. The program seeks to offer a well-rounded education, featuring courses in liberal arts, business fundamentals, global business, and
+                                            social impact. During my four years, I explored courses in accounting, finance, and economics. I eventually settled on obtaining a dual-concentration
+                                            in Data Science and Management.</p>
                                     </div>
                                 </div>
 
-
-
-
-
+                                {/*temporary solution to dynamically size the timeline page*/}
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                {/*temporary solution to dynamically size the timeline page*/}
                             </div>
                         </div>
                     </section>

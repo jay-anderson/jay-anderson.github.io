@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 const secondSection = (
    <section className={"about-second"}>
         <div className={"narrow-content"}>
@@ -8,52 +9,57 @@ const secondSection = (
                 <br/>
             </div>
         </div>
+       <div className={"table-about"}>
             <div className="col-row">
-                <div className="column">
+                <div className="column" id={"column-1"}>
                     <div className="card">
                         <h3>Web & Front End Development</h3>
                         <div className={"p-container"}>
                             <p>I love building websites. I'm a front-end leaning programmer, but I do have backend experience. As of now, I'm specializing in building custom personal webpages for small organizations and young professionals. I enjoy creating simple, easy-to-understand sites with an emphasis on smooth and simple communication.  </p>
                             <p>Given that we do most of our searching from our smartphones, I aim to create each website with a mobile-first approach. This helps the site to load faster and smooths out the transition from mobile to desktop.</p>
                         </div>
-                        <h4 id={"h4-card-one-language"}>Languages:</h4>
-                        <p>JavaScript, HTML, CSS, Node.js, React</p>
-                        <br/>
-                        <h4 id={"h4-card-one"}>Tools I use:</h4>
-                        <p>Atom, JetBrains' Webstorm</p>
+                        <div className={"language-tool-container"}>
+                            <h4 className="card-languages"  id={"h4-card-one-language"}>Languages:</h4>
+                            <p>JavaScript, HTML, CSS, Node.js, React</p>
+                            <h4 className="card-tools" id={"h4-card-one"}>Tools I use:</h4>
+                            <p>Atom, JetBrains' Webstorm</p>
+                        </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column" id={"column-2"}>
                         <div className="card" id={"card-two"}>
                             <h3>Software Development</h3> {/*what about something business related instead?*/}
                             <div className={"p-container"}>
-
                                 <p>I've taken coursework in a multitude of Computer Science subjects, including Data Structures, Algorithms, Operating Systems, and Computer Hardware. During these courses, I contributed to designing and developing software programs to meet a variety of needs on both solo projects and in teams.</p>
                                 <p>Outside of academics, I've worked in two information technology roles. I worked as an Information Technology Intern for two years at NYU Gallatin and I worked as a Helpdesk Assistant for a little under a year at the NYU School of Law.</p>
                             </div>
-                            <h4 id={"h4-card-two-language"}>Languages:</h4>
-                            <p>Java, C, MIPS/Assembly, Python</p>
-                            <br/>
-                            <h4>Tools I use:</h4>
-                            <p>IntelliJ, Webstorm, CLion, Atom</p>
+                            <div className={"language-tool-container"}>
+                                <h4 className="card-languages" id={"h4-card-two-language"}>Languages:</h4>
+                                <p>Java, C, MIPS/Assembly, Python</p>
+                                <h4 className="card-tools" id={"h4-card-two"}>Tools I use:</h4>
+                                <p>IntelliJ, Webstorm, CLion, Atom</p>
+                            </div>
                         </div>
                 </div>
-                <div className="column">
+                <div className="column" id={"column-3"}>
                         <div className="card" id={"card-three"}>
+
                             <h3>Data Science & Analytics</h3>
                             <div className={"p-container"}>
 
                                 <p>I've completed numerous courses in data analytics at both NYU and the National University of Singapore. My primary tool for data analytics is Python. I have experience with a variety of machine learning techniques. I'm familiar with the following methods of supervised learning: regression, decision tree, random forest, KNN, and logistic regression. I also have experience with K-Means clustering.</p>
                                 <p>I have experience with other methods of data analytics such as using Tableau's platform. I have some familiarity with querying SQL databases. </p>
                             </div>
-                            <h4 id={"h4-card-three-language"}>Languages:</h4>
-                            <p>Python, SQL</p>
-                            <br/>
-                            <h4 id={"h4-card-three"}>Tools I use:</h4>
-                            <p>Tableau, Jupyter Notebooks, Google Colab</p>
+                            <div className={"language-tool-container"}>
+                                <h4 className="card-languages" id={"h4-card-three-language"}>Languages:</h4>
+                                <p>Python, SQL</p>
+                                <h4 className="card-tools"  id={"h4-card-three"}>Tools I use:</h4>
+                                <p>Tableau, Jupyter Notebooks, Google Colab</p>
+                            </div>
                         </div>
                 </div>
             </div>
+        </div>
     </section>
 )
 
